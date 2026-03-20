@@ -1,5 +1,42 @@
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>First Init — Landing</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; display:flex; min-height:100vh; flex-direction:column; }
+      header, footer { background:#0f172a; color:#fff; padding:1rem; text-align:center; }
+      main { flex:1; padding:2rem; max-width:900px; margin:0 auto; width:100%; }
+      .hero { background:#f3f6ff; border-radius:8px; padding:1.5rem; box-shadow:0 1px 3px rgba(2,6,23,0.06); }
+      .muted { color:#555; }
+      .btn { background:#2563eb; color:#fff; padding:.5rem 1rem; border-radius:6px; text-decoration:none; display:inline-block; margin-top:1rem; }
+    </style>
+  </head>
   <body>
-<p> this is reserved </p>
+    <header>
+      <h1>Welcome to First Init</h1>
+    </header>
+    <main>
+      <section class="hero">
+        <h2>Quick starter page</h2>
+        <p class="muted">This page was updated automatically. Replace this content as needed.</p>
+        <a href="#" id="learn" class="btn">Learn more</a>
+      </section>
+      <section>
+        <h3>About</h3>
+        <p>Simple, minimal static HTML template for learning and quick experiments.</p>
+      </section>
+    </main>
+    <footer>
+      <small>© 2026 First Init</small>
+    </footer>
+    <script>
+      document.getElementById('learn').addEventListener('click', function(e){
+        e.preventDefault();
+        alert('Demo: edit index.html to customize this page.');
+      });
+    </script>
   </body>
 </html>
